@@ -105,5 +105,9 @@ print(str_num_1, nuevo_srt_num_1, float_num_1, sep = " -- ")
 """Print End, nos permite imprimir algo al finalizar las variables impresas"""
 print(str_num_1, nuevo_srt_num_1, float_num_1, end = "&&")
 
-
-
+"""
+    Metodo HELP: este metodo me permite conocer la documemntación de los
+    diferentes metodos en Python
+"""
+help(str.center)
+help(int.bit_length)
