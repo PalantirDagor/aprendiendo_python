@@ -1,7 +1,5 @@
-En Python
-se lee
-los archivos
-de esta manera
-para la clase
-de backend con
-Python
+Esto es una línea nueva
+Esto es otra línea nueva
+Esto es la última línea nueva
+clase #8
+[1,2,3,4, True]

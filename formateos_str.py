@@ -128,3 +128,23 @@ for numero in numeros:
 print("*" * 30)
 for numero in numeros:
   print("{:!>{cantidad}} es múltiplo de 10".format(numero, cantidad=10))
+
+# Formateo de decimales
+tax = 3
+taxny = 0.7
+taxcolombia = 20
+
+print("formato tax tipo de dato      : {:f}".format(tax))
+print("formato tax decimales         : {:.3f}".format(taxny))
+print("formato tax decimales         : {:.2f}".format(taxcolombia))
+print("formato tax decimales         : {:.5f}".format(pi))
+print("formato tax tipo de dato      : {:.2}".format(pi))
+
+"""
+    Formato Moderno: muy utilizado en las nuevas verciones de Python
+    Funciona con variables declaradas
+"""
+print(f"el nombre es: {nombre}, el valor de pi es: {pi}")
+print(f"el nombre es: {nombre}, el valor de pi es: {pi:.2f}")
+print(f"el nombre es: {len(nombre)}, el valor de pi es: {pi:.2f}")
+print(f"el nombre es: {str.upper(nombre)[::-1]}, el valor de pi es: {pi:.2f}")

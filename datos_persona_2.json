@@ -1,0 +1,17 @@
+{
+    "nombre": "Duber",
+    "apellido": "Galvis",
+    "rol": "Profe en Polisura",
+    "fecha_nacimiento": "19/11/87",
+    "grupo_sanguineo": {
+        "rh": "+",
+        "grupo": "O"
+    },
+    "activo": true,
+    "antecedentes": null,
+    "tags": [
+        "aa",
+        "bb",
+        "cc"
+    ]
+}

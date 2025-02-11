@@ -1,0 +1,17 @@
+{
+    "nombre": "Joaquin",
+    "apellido": "Mena",
+    "rol": "Estudiante en Polisura",
+    "fecha_nacimiento": "16/11/87",
+    "grupo_sanguineo": {
+        "rh": "+",
+        "grupo": "O"
+    },
+    "activo": true,
+    "antecedentes": null,
+    "tags": [
+        "aa",
+        "bb",
+        "cc"
+    ]
+}
