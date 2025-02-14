@@ -218,4 +218,73 @@ print("*" * 50)
 accounBanc = AccountBank()
 print(accounBanc.bank)
 print(accounBanc._level)
-print(accounBanc.__taxes)
+# print(accounBanc.__taxes)
+
+"""
+    Injectando funcion
+    
+"""
+setattr(AccountBank, "x", lambda x,y: x + y)
+
+print(AccountBank.__dict__)
+print(AccountBank.x(5,6))
+
+# no funciona
+# accounBanc.x(5,6)
+
+# Uso interno de atributos (variables) de una clase
+
+class AccountBankV2:
+    bank: str = "CursoBackend"
+    _level: int = 3
+    __taxes: float = 0.34
+    
+    def perform_taxes(self, amount: int):
+        print(f"calculating data for: {self.bank}, level {self._level}")
+        return round(amount * self.__taxes, 2)
+
+atributos_internos = AccountBankV2()
+print(atributos_internos.perform_taxes(100000))
+
+"""
+    Función constructor de la clase en Python
+    Inicializadores de clase. En resumen, es el punto de entrada para computar y realizar acciones antes 
+    de que devuelva la instancia del objeto.
+
+    Un constructor es UNA función, es decir que le pueden aplicar todos los trucos que vimos en funciones.
+
+    Siempre el constructor va con __init__
+"""
+# lista de la clase persona para almecenar los datos de cada usuario
+class Persona():
+    id: str
+    nombre: str
+    edad: int
+
+persona_1 = Persona()
+persona_1.id = "111"
+persona_1.nombre = "pepito"
+persona_1.edad = 12
+
+persona_2 = Persona()
+persona_2.id = "2222"
+persona_2.nombre = "julanito"
+persona_2.edad = 25
+
+usuarios: list = [persona_1, persona_2]
+print(usuarios[1].id)
+print("*" * 50)
+class PersonaV2():
+    def __init__(self, id: str, nombre: str,  edad: int, taxes: float = 0.002):
+        self.id: str = id
+        self.nombre: str = nombre
+        self.edad: int = edad
+        self.__taxes: float = taxes
+
+persona = PersonaV2("11258", "Armando Bronca", 19)
+print(persona.id)
+print(persona.__dict__)
+
+# mejorando el ejemplo anterior
+usuariosV2 = [ PersonaV2("111", "pepito", 12), PersonaV2("2222", "julanito", 25)]
+print(usuariosV2[1].id)

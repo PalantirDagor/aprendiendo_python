@@ -1,5 +1,5 @@
-Esto es una línea nueva
-Esto es otra línea nueva
-Esto es la última línea nueva
+Esto es una lï¿½nea nueva
+Esto es otra lï¿½nea nueva
+Esto es la ï¿½ltima lï¿½nea nueva
 clase #8
 [1,2,3,4, True]

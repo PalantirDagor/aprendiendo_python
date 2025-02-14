@@ -94,7 +94,7 @@ with open("ejemplo_archivo.txt", "a") as cualquier_alias:
 # de un archivo. Esto permite moverse a diferentes partes del archivo para 
 # leer o escribir datos en ubicaciones específicas.
 
-with open("ejemplo_archivo_2.txt", "a") as cualquier_alias:
+with open("ejemplo_archivo_2.txt", "w") as cualquier_alias:
     # indicar dónde está el cursor
     print(cualquier_alias.tell())
     print(cualquier_alias.seek(0, 0))
