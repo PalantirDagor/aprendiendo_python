@@ -2,10 +2,22 @@
     Pilares de POO (Programación Orientada o Objetos)
     Encapsulamento, Herencia, Polimorfismo y Abstracción
 """
+"""
+    Encapsulamiento
+    Cuando hablamos de encapsulamiento estamos hablando de accesibilidad.
+
+    pública: si no tienen nada adelante, es una variable pública
+    _semipública: si tiene un guion `_` adelante se conoce como semipública
+    __privada: si tiene dos guiones de piso  `__` es privada (teóricamente, pero no es del todo verdad)
+    Notas:
+
+    En Python, el encapsulamiento es débil
+    Estos nombres aplican tanto para métodos como para atributos
+"""
 class AccountBank:
-  bank: str = "CursoBackend"
-  _level: int = 2
-  __taxes: float = 0.34
+    bank: str = "CursoBackend"
+    _level: int = 2
+    __taxes: float = 0.34
 
 accounBank = AccountBank()
 print(accounBank.bank)
@@ -184,11 +196,11 @@ class Gato(Animal):
     duerme: str = "día"
     def mover(self):
         print("ágilmente")
-
+        
     def comer(self, preferido: str, alternativos: list) -> None:
         print(preferido)
         print(alternativos)
-    
+            
     def comunicacion(self) -> None:
         print("Meow!" * 10)
 
